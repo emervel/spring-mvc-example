@@ -18,7 +18,7 @@
 		SELECT * FROM employee
 	</select>
 	
-	<insert id="insertEmployee" parameterType="employee" keyProperty="id" useGeneratedKeys="true">
+	<insert id="insertEmployee" parameterType="employee">
 		INSERT INTO employee(fullname, email, gender, hobbies, country, address)
 		VALUES(#{fullname}, #{email}, #{gender}, #{hobbies}, #{country}, #{address})
 	</insert>
